@@ -1,19 +1,142 @@
-$font-size = 12px
-
+$font-size = 12px;
+$color-logo = #f04381;
+$color-main = #444444;
+$color-a = #006699;
 //页面的初始化
 body,a,p,h1,h2,h3,h4,ul,li,input,img,div,span,form,dl,dt,dd,em,i,textarea
-	font-size:$font-size
 	margin:0
 	padding:0
 img
 	border:none
 	vertical-align:top
 li
-	list-decoration:none
+	list-style:none
 a
 	text-decoration:none
-	color:#666666
+	color:$color-a;
 	&:hover
-		color:#f04381
-div
-	height:100px
+		color:$color-logo
+em,i
+	font-style:normal
+body
+	font-size:$font-size
+	color:$color-main
+	font-family:"微软雅黑"
+	background-color:#e7e7e7
+	
+//顶部logo/nav
+.top
+	height:59px
+	width:100%
+	background-color:#f7f7f7
+	box-sizing:border-box
+	border-bottom:1px solid #dbdbdb
+	.top-main
+		width:980px
+		height:59px
+		margin: 0 auto
+		.logo
+			float:left
+			display:inline
+			margin:11px 0 5px 0
+			width:90px
+			height:36px
+		.nav
+			float:left
+			height:32px
+			width:auto
+			margin:16px 0 0 46px
+			li
+				float:left
+				margin-right:37px
+				font-size:18px
+		.search
+			float:right;
+			height:30px;
+			margin:13px 15px 0 0 
+			.search-main
+				float:left
+				height:30px
+				line-height:30px
+				width:200px
+				background:url(../../images/btn.png) no-repeat
+				border:1px solid #dfdfdf
+				.text
+					float:left
+					padding:10px
+					width:172px
+					height:30px
+					box-sizing:border-box
+					border:0 none
+					font-size:12px
+					color:#dbdbdb
+					background:none
+					outline:none
+				.btn
+					float:left
+					margin-left:0
+					width:28px
+					height:30px
+					box-sizing:border-box
+					border:0 none
+					background:none
+					cursor:pointer
+			.login,.reg
+				float:left
+				width:55px
+				height:30px
+				font-size:14px
+				color:#FFF
+				background:url(../../images/btn.png) no-repeat
+			.login
+				margin-left:26px
+				border:none
+				background-position-x:0
+				background-position-y:-40px
+				&:hover
+					background-position:-59px
+					background-position-y:-40px
+			.reg
+				margin-left:8px
+				border:none
+				background-position:0
+				background-position-y:-72px
+				&:hover
+					background-position:-59px
+					background-position-y:-73px
+//中间主体部分
+.middle
+	.middle-main
+		width:880px
+		height:auto
+		border:1px solid #dfdfdf
+		margin: 18px auto 0
+		padding:0 26px 0 32px
+		background:#f7f7f7
+		box-sizing:border-box
+		.content
+			padding-bottom:28px
+			border-bottom:1px dashed #dfdfdf
+			.title
+				padding:22px 0 0 0;
+				font-weight:400;
+			.date
+				padding:12px 0 0 0;
+			.detail
+				padding:23px 10px 0 0;
+				text-indent:2em
+		.ratings-wrap
+			padding:18px 0 0 0
+			.ratings
+				height:auto
+				width:auto
+				padding-bottom:30px;
+				.detail
+					margin:20px 19px 0 33px 
+					padding-left:8px
+					border-left:2px solid #dfdfdf
+					
+				
+				
+			
+		
